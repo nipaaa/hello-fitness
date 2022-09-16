@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2936/2936886.png" type="image/x-icon">
     <title>Workout</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
     <!-- fontawesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap css cdn link -->
@@ -16,48 +18,39 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand text-white bg-dark rounded-circle px-2" href="#">HF</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand text-white bg-dark rounded-circle px-2" href="#">HF</a>
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active  mx-4" aria-current="page" href="#">
-                    <div class="text-center">
-                        <i class="fa-solid fa-video"></i>
-                        <h6>LIVE</h6>
-                    </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active  mx-4" aria-current="page" href="#">
-                    <div class="text-center">
-                      <i class="fa-sharp fa-solid fa-id-card"></i>
-                        <h6>MEMBERSHIPS</h6>
-                    </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-4" aria-current="page" href="#">
-                    <div class="text-center">
-                        <i class="fa-solid fa-person-running"></i>
-                        <h6>PLANS</h6>
-                    </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active  mx-4" aria-current="page" href="#">
-                    <div class="text-center">
-                      <i class="fa-solid fa-maximize"></i>
-                        <h6>MORE</h6>
-                    </div>
-                </a>
-              </li>
-              
-              
-            </ul>
-            <div class="d-flex"> 
+         
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item  mx-4">
+                  <a class="nav-link active" aria-current="page" href="#">
+                          <i class="fa-solid fa-video"></i>
+                          <h6>LIVE</h6>
+                  </a>
+                </li>
+                <li class="nav-item  mx-4">
+                  <a class="nav-link active" aria-current="page" href="#">
+                          <i class="fa-sharp fa-solid fa-address-card"></i>
+                          <h6>MEMBERSHIPS</h6>
+                  </a>
+                </li>
+                <li class="nav-item  mx-4">
+                  <a class="nav-link active" aria-current="page" href="#">
+                          <i class="fa-solid fa-person-running fs-5"></i>
+                          <h6>PLANS</h6>
+                  </a>
+                </li>
+                <li class="nav-item  mx-4">
+                  <a class="nav-link active" aria-current="page" href="#">
+                          <i class="fa-solid fa-minimize"></i>
+                          <h6>MORE</h6>
+                  </a>
+                </li> 
+              </ul>
+              <div class="d-flex justify-content-center"> 
                 <h6 class="nav-link active text-dark" aria-current="page" href="#">
                   <i class="fa-solid fa-user"></i>
                   Login
@@ -69,13 +62,30 @@
 </header>
 
 
-    <main class="container">
-      <h1>Runner's Workout</h1>
-      <div class="border border-2 rounded-3">
-        <img src="img/1.png" alt="" srcset="">
-        <img src="img/3.png" alt="" srcset="">
-        <img src="img/2.png" alt="" srcset="">
-      </div>
+    <main class="container my-5">
+      <h1 class="pb-3">Runner's Workout</h1>
+
+      <div class="d-flex w-100 text-white parent">
+        <div class="d-flex justify-content-between child strength p-4">
+            <h3>STRENGTH </h3>
+            <div class="icon">
+              <i class="fa-solid fa-circle-arrow-right fs-4"></i>
+            </div>
+        </div>
+    <div class="d-flex justify-content-between child mobility p-4">
+        <h3>MOBILITY </h3>
+        <div class="icon">
+          <i class="fa-solid fa-circle-arrow-right fs-4"></i>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between child drills p-4">
+        <h3>DRILLS </h3>
+        <div class="icon">
+          <i class="fa-solid fa-circle-arrow-right fs-4"></i>
+        </div>
+    </div>
+
+</div>
 
     </main>
 

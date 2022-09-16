@@ -1,0 +1,47 @@
+.strength{
+    background-image: url('img/1.png');
+    background-size: cover;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius:20px ;
+}
+.mobility{
+    background-image: url('img/3.png');
+    background-size: cover;
+}
+.drills{
+    background-image: url('img/2.png');
+    background-size: cover;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+
+.parent{
+    border: solid 2px blueviolet;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.child{
+    width: 33.33%;
+    height: 350px;
+    
+}
+.child:hover{
+    width:60%;
+}
+
+.icon{
+    display: none;
+}
+
+.child:hover .icon{
+    display: block;
+}
+
+
+/* mobile devices */
+@media only screen and (min-width:100px) and (max-width:688px) {
+    .child:hover{
+        width:100%;    
+    }
+}
